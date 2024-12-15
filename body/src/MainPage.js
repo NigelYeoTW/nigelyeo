@@ -18,14 +18,11 @@ function MainPage() {
           <img src={me} className="me"></img>
         </div>
         <div className='intro-container'>
-          <span className='intro-one'>Hello there!</span>
-          <span className='intro-two'>I am Nigel and welcome to my page.</span>
+          <span className='descriptors'>Curious . Creative . Critical . Curious . Creative . Critical . Curious . Creative . Critical . Curious . Creative . Critical .</span>
         </div>
       </div>
-      <div className='arrow-container'>
-        <div className='circle'></div>
-        <img src={downArrow} className='down-arrow'></img>
-      </div>
+      <div className='circle'></div>
+      <img src={downArrow} className='down-arrow'></img>
     </div>
   )
 }
