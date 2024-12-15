@@ -96,7 +96,7 @@ span.descriptors {
   text-wrap: nowrap;
   font-size: 70px;
   color: #dcd8c0;
-  animation: 4s linear infinite spin-description;
+  animation: 5s linear infinite spin-description;
 }
 
 @keyframes spin-description {

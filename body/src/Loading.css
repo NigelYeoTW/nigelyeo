@@ -9,6 +9,7 @@ body {
 }
 
 .logo-container {
+  background-color: #dcd8c0;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -98,8 +99,4 @@ svg text.circle-one {
   90%, 100% {
     opacity: 0;
   }
-}
-
-body {
-  background-color: #dcd8c0;
 }
