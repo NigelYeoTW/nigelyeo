@@ -34,7 +34,7 @@ body {
   font-family: 'brush';
   stroke-width: 2px;
   stroke: black;
-  fill: #dcd8c0;
+  fill: #dcd5ab;
 }
 
 svg text.circle-one {
@@ -98,8 +98,4 @@ svg text.circle-one {
   90%, 100% {
     opacity: 0;
   }
-}
-
-body {
-  background-color: #dcd8c0;
 }
