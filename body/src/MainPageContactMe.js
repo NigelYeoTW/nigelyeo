@@ -13,11 +13,15 @@ function MainPageContactMe() {
     navigator.clipboard.writeText("@nigelyeo");
   }
 
+  const openGithub = () => {
+    window.open('https://github.com/NigelYeoTW').focus();
+  }
+
   return (
     <div className='contact-me-container'>
       <p className='lets-connect'> LET'S CONNECT </p>
       <div className='contact-container'>
-        <div className='contact'>
+        <div className='contact' onClick={openGithub}>
           <img src={github} className='github'></img>
         </div>
         <div className='contact contact-tele' onClick={copyToClipboardTele}>
