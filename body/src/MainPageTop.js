@@ -5,6 +5,11 @@ import downArrow from './icon-arrow-down.svg';
 import speechBubble from './speech-bubble.png';
 
 function MainPageTop() {
+
+  const scrollBottom = () => {
+    window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+  }
+
   return (
     <div className="mainpage">
       <div className = "header">
@@ -13,8 +18,8 @@ function MainPageTop() {
           <span className="my-name">Nigel Yeo's</span>
           <span className='below-name'>Personal Profile</span>
         </div>
-        <div className='contact-button-container'>
-          <button className='contact-button'> 
+        <div className='contact-button-container' onClick={scrollBottom}>
+          <button className='contact-button' onClick={scrollBottom}> 
             Contact Me
           </button>
         </div>
