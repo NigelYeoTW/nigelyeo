@@ -64,4 +64,29 @@ img.mail {
   transform: scale(0.9);
 }
 
+p.tele-text {
+  position: absolute;
+  visibility: hidden;
+  transform: translate3d(30px, -100px, 0);
+  font-size: 20px;
+}
 
+img.tele {
+  margin-top: 5px;
+  margin-left: -5px;
+  transform: scale(1.05);
+}
+
+div.contact-tele:hover {
+  padding-left: 5px;
+  border-radius: 50px; 
+  width: 220px;
+  justify-content: left;
+  transform: scale(0.8);
+  transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+div.contact-tele:hover p.tele-text {
+  visibility: visible;
+  transform: translate3d(100px, 0, 0);
+}
