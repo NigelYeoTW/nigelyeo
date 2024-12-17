@@ -4,6 +4,7 @@ import MainPageAboutMe from "./MainPageAboutMe";
 import MainPageSelection from "./MainPageSelection";
 import MainPageTop from "./MainPageTop";
 import Loading from './Loading';
+import MainPageContactMe from './MainPageContactMe';
 
 function MainPage() {
 
@@ -42,6 +43,7 @@ function MainPage() {
       <MainPageTop/>
       <MainPageAboutMe/>
       <MainPageSelection/> 
+      <MainPageContactMe/>
     </div> : 
     <>
       <Loading setFinished = {setFinished}/>

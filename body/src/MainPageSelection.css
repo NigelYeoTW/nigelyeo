@@ -1,0 +1,34 @@
+div.selection-overall {
+  min-width: 1470px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #e7dda9; */
+}
+
+div.select {
+  position: relative;
+  width: 330px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfc698;
+  box-shadow: 1px 1px 1px grey;
+  cursor: pointer;
+}
+
+div.select:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* div.inner-select {
+  width: 315px;
+  height: 135px;
+  background-color: #dcd8c0;
+  border-radius: 13px;
+} */
+

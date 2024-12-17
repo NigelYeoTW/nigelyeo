@@ -34,6 +34,7 @@ div.image-me {
   width: 450px;
   overflow: hidden;
   margin: 50px 100px 50px 20px;
+  box-shadow: 6px 6px 3px grey;
 }
 
 img.intro-me {
