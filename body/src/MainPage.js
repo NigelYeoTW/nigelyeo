@@ -38,11 +38,11 @@ function MainPage() {
 
   return (
     isLoaded && hasFinished ? 
-    <>
+    <div className='all'>
       <MainPageTop/>
       <MainPageAboutMe/>
       <MainPageSelection/> 
-    </> : 
+    </div> : 
     <>
       <Loading setFinished = {setFinished}/>
     </>

@@ -1,8 +1,43 @@
 div.about-me {
-  width: 100%;
-  height: 1000px;
+  position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
+  min-width: fit-content;
+}
+
+div.intro-text {
+  width: 900px;
+}
+
+div.intro-text p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p.about-me {
+  margin: 0;
+  display: inline-block;
+  padding: 60px 20px 60px 100px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+p.about-me-text {
+  margin: 0;
+  padding: 0px 20px 0px 100px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+div.image-me {
+  height: 350px;
+  width: 450px;
+  overflow: hidden;
+  margin: 50px 100px 50px 20px;
+}
+
+img.intro-me {
+  /* padding: 100px; */
+  height: 600px;
+  margin-top: -150px;
 }
