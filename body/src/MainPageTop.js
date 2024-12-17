@@ -13,6 +13,11 @@ function MainPageTop() {
           <span className="my-name">Nigel Yeo's</span>
           <span className='below-name'>Personal Profile</span>
         </div>
+        <div className='contact-button-container'>
+          <button className='contact-button'> 
+            Contact Me
+          </button>
+        </div>
       </div>
       <div className="hero">
         <div className='crop-box'>

@@ -45,6 +45,27 @@ div.header {
   width: 100%;
 }
 
+div.contact-button-container {
+  position: absolute;
+  right: 50px;
+  top: 22%;
+  border: 1px solid #b3af97;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button.contact-button {
+  font-family: Neuemontreal, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  border: 0px;
+  height: 40px;
+  background-color: #dcd8c0;
+  cursor: pointer;
+}
+
 div.hero {
   width: 100%;
   display: flex;
@@ -99,7 +120,7 @@ div.quotation-container {
   /* flex-direction: column; */
   width: 780px;
   transform: translate3d(0, -100px, 0);
-  animation: 3s speech-appear;
+  animation: 2s speech-appear;
 }
 
 span.quotation-open {
