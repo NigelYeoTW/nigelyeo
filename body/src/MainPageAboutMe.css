@@ -35,6 +35,7 @@ div.image-me {
   overflow: hidden;
   margin: 50px 100px 50px 20px;
   box-shadow: 6px 6px 3px grey;
+  border-radius: 10px;
 }
 
 img.intro-me {
