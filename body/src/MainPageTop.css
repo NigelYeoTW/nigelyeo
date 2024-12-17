@@ -1,6 +1,7 @@
 .mainpage {
   position: relative;
   height: 100vh;
+  min-width: fit-content;
 }
 
 span {
@@ -46,13 +47,13 @@ div.hero {
   justify-content: center;
   align-items: center;
   background-color: #dcd8c0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* min-width: fit-content; */
 }
 
 div.crop-box {
-  height: 405px;
-  width: 300px;
-  transform: translate3d(-150px, 0, 0);
+  height: 486px;
+  width: 360px;
   overflow: hidden;
   animation: 2s flip-me;
   z-index: 3;
@@ -61,20 +62,20 @@ div.crop-box {
 @keyframes flip-me {
   0% {
     opacity: 0;
-    transform: translate3d(-300px, 0 ,0);
+    transform: translate3d(-150px, 0 ,0);
   }
 
   100% {
     opacity: 1;
-    transform: translate3d(-150px,0,0);
+    transform: translate3d(0,0,0);
   }
 }
 
 img.me {
   height: 600px;
-  margin-top: -160px;
-  margin-left: -100px;
-  transform: rotateY(180deg) scale(1.5);
+  margin-top: -140px;
+  margin-left: -60px;
+  transform: rotateY(180deg) scale(1.9);
 }
 
 @keyframes speech-appear {
@@ -87,11 +88,46 @@ img.me {
   }
 }
 
+div.quotation-container {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  width: 780px;
+  transform: translate3d(0, -100px, 0);
+  animation: 3s speech-appear;
+}
+
+span.quotation-open {
+  color: grey;
+  display: inline-block;
+  font-size: 150px;
+  height: 50px;
+}
+
+span.quotation-close {
+  color: grey;
+  display: inline-block;
+  font-size: 0px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+}
+
+span.quote {
+  padding-top: 50px;
+  padding-left: 20px;
+  display: inline-block;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5d4b0b
+}
+
 div.speech-bubble-container {
   position: absolute;
   top: 0;
   height: 180px;
-  width: 340px;
+  width: 360px;
   transform: translate3d(60px, 0, 0);
   animation: 3s speech-appear;
 }
@@ -114,7 +150,7 @@ img.speech-bubble {
 
 div.intro-container {
   position: absolute;
-  height: 30%;
+  height: 25%;
   width: 95%;
   border-radius: 10rem;
   background-color: rgb(53, 52, 52);

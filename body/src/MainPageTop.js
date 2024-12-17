@@ -18,10 +18,15 @@ function MainPageTop() {
         <div className='crop-box'>
           <img src={me} className="me"></img>
         </div>
-        <div className='speech-bubble-container'>
+        <div className="quotation-container">
+          <span className='quotation-open'>“</span>
+          <span className='quote'>Take every opportunity that presents itself to you and give it your best.</span>
+          <span className='quotation-close'>”</span>
+        </div>
+        {/* <div className='speech-bubble-container'>
           <img src={speechBubble} className="speech-bubble"></img>
           <span className='speech'>Hi there! I'm Nigel.</span>
-        </div>
+        </div> */}
         <div className='intro-container'>
           <span className='descriptors'>Curious . Creative . Critical . Curious . Creative . Critical . Curious . Creative . Critical . Curious . Creative . Critical .</span>
         </div>
