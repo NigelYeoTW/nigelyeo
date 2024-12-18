@@ -26,11 +26,13 @@ function MainPageContactMe() {
         </div>
         <div className='contact contact-tele' onClick={copyToClipboardTele}>
           <img src={tele} className='tele'></img>
-          <p className='tele-text'>@nigelyeo</p>
+          <p className='hidden-text'>@nigelyeo</p>
+          <p className='copied hidden-text'>COPIED!</p>
         </div>
         <div className='contact contact-mail' onClick={copyToClipboardMail}>
           <img src={mail} className='mail'></img>
-          <p className='mail-text'>nigelyeotongwei@gmail.com</p>
+          <p className='hidden-text'>nigelyeotongwei@gmail.com</p>
+          <p className='copied hidden-text'>COPIED!</p>
         </div>
       </div>
     </div>

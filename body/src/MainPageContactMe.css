@@ -54,9 +54,21 @@ div.contact-mail:hover {
   transition: width 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
-div.contact-mail:hover p.mail-text {
+div.contact-mail:hover p.hidden-text {
   visibility: visible;
   transform: translate3d(100px, 0, 0);
+}
+
+div.contact-mail:hover p.copied {
+  visibility: hidden;
+}
+
+div.contact-mail:active p.hidden-text {
+  visibility: hidden;
+}
+
+div.contact-mail:active p.copied {
+  visibility: visible;
 }
 
 img.mail {
@@ -64,7 +76,7 @@ img.mail {
   transform: scale(0.9);
 }
 
-p.tele-text {
+p.hidden-text {
   position: absolute;
   visibility: hidden;
   transform: translate3d(30px, -100px, 0);
@@ -86,7 +98,23 @@ div.contact-tele:hover {
   transition: width 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-div.contact-tele:hover p.tele-text {
+div.contact-tele:hover p.hidden-text {
   visibility: visible;
   transform: translate3d(100px, 0, 0);
+}
+
+div.contact-tele:hover p.copied {
+  visibility: hidden;
+}
+
+div.contact-tele:active p.hidden-text {
+  visibility: hidden;
+}
+
+div.contact-tele:active p.copied {
+  visibility: visible;
+}
+
+div.contact-tele:active p.tele-text {
+  visibility: hidden;
 }
