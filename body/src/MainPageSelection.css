@@ -12,17 +12,72 @@ div.select {
   width: 330px;
   height: 150px;
   border-radius: 20px;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #cfc698;
-  box-shadow: 1px 1px 1px grey;
+  /* box-shadow: 1px 1px 1px grey; */
+  box-shadow: #a2996e 4px 4px 0 0,#000 4px 4px 0 2px;
   cursor: pointer;
+  overflow: hidden;
 }
 
-div.select:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+@keyframes jumping {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  60% {
+    transform: translate3d(0, -30px, 0) rotate(0deg);
+  }
+
+  80% {
+    transform: translate3d(0, -20px, 0) rotate(-15deg);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+div.select span {
+  text-align: center;
+}
+
+div.select:hover span{
+  animation: 1.5s infinite jumping;
+  /* transform: scale(1.05); */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+div.jiggle {
+  animation-delay: 5s;
+  animation: 0.1s 3 jiggle;
+}
+
+div.select:active {
+  box-shadow: #a2996e 3px 3px 0 0,#000 3px 3px 0 2px;
+  transform: scale(0.98);
+}
+
+div.select span {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  /* color: rgb(255, 251, 200); */
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
 
 /* div.inner-select {
