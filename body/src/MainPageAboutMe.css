@@ -4,6 +4,7 @@ div.about-me {
   flex-direction: row;
   justify-content: space-between;
   min-width: fit-content;
+  overflow: hidden;
 }
 
 div.intro-text {
