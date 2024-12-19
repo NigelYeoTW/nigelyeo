@@ -3,8 +3,37 @@ import phone from './phone.png';
 import bouldering from './bouldering.jpg';
 import singing from './singing.png';
 import softball from './softball.jpg';
+import react from 'react';
+import { useState, useEffect } from 'react';
 
 function HobbiesBody() {
+
+  const [swipeNumber, setSwipeNumber] = useState(0);
+  let swipePictures = document.querySelectorAll('.picture');
+  let swipeTexts = document.querySelectorAll('.text');
+
+  const swipeLeft = () => {
+    if (swipeNumber == 0) {
+      return;
+    }
+    setSwipeNumber(swipeNumber => swipeNumber - 1);
+    swipePictures[swipeNumber].classList.remove('swiped-picture');
+    swipeTexts[swipeNumber].classList.remove('swiped-text');
+  }
+
+  const swipeRight = () => {
+    swipePictures[swipeNumber].classList.add('swiped-picture');
+    swipeTexts[swipeNumber].classList.add('swiped-text');
+    if (swipeNumber < 2) {
+      setSwipeNumber(swipeNumber => swipeNumber + 1);
+    }
+  }
+
+  useEffect(() => {
+    swipePictures = document.querySelectorAll('.picture');
+    swipeTexts = document.querySelectorAll('.text');
+  }, [])
+
   return (
     <div>
       <div className='phone-image-container'>
@@ -13,18 +42,18 @@ function HobbiesBody() {
           <span className='gram-logo'>nigelgram</span>
           <div className='gram-body-container'>
             <div className='gram-image-container'>
-              <img src={bouldering} className='bouldering'></img>
-              <div className='singing filler'>
+              <img src={bouldering} className='picture bouldering'></img>
+              <div className='picture singing filler'>
                 <img src={singing} className='singing'></img>
               </div>
-              <img src={softball} className='softball'></img>
+              <img src={softball} className='picture softball'></img>
             </div>
             <div className='gram-text'>
               <div className='button-container'>
-                <button className='change'>
+                <button className='change' onClick={swipeLeft}>
                   <span>&lt;</span>
                 </button>
-                <button className='change'>
+                <button className='change' onClick={swipeRight}>
                   <span>&gt;</span>
                 </button>
               </div>
