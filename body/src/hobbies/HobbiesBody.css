@@ -3,12 +3,12 @@
   src: url("GreatVibes-Regular.ttf");
 }
 
-p {
+div.text p {
   font-family: Neuemontreal, sans-serif;
   font-size: 20px;
 }
 
-strong {
+div.text strong {
   display: inline-block;
   font-family: Neuemontreal, sans-serif;
   font-size: 25px;
@@ -30,6 +30,21 @@ img.phone-image {
   transform-origin: 100% 100%;
   animation: 2s 1 rotate-corner;
   animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0%, 50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+div.contents-container {
+  animation-fill-mode: forwards;
+  animation: 4s appear;
 }
 
 div.phone-image-container {
