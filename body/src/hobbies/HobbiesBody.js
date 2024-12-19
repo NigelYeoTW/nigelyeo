@@ -16,17 +16,18 @@ function HobbiesBody() {
     if (swipeNumber == 0) {
       return;
     }
+    swipePictures[swipeNumber - 1].classList.remove('swiped-picture');
+    swipeTexts[swipeNumber - 1].classList.remove('swiped-text');
     setSwipeNumber(swipeNumber => swipeNumber - 1);
-    swipePictures[swipeNumber].classList.remove('swiped-picture');
-    swipeTexts[swipeNumber].classList.remove('swiped-text');
   }
 
   const swipeRight = () => {
+    if (swipeNumber >= 2) {
+      return;
+    }
     swipePictures[swipeNumber].classList.add('swiped-picture');
     swipeTexts[swipeNumber].classList.add('swiped-text');
-    if (swipeNumber < 2) {
-      setSwipeNumber(swipeNumber => swipeNumber + 1);
-    }
+    setSwipeNumber(swipeNumber => swipeNumber + 1);
   }
 
   useEffect(() => {
@@ -42,11 +43,15 @@ function HobbiesBody() {
           <span className='gram-logo'>nigelgram</span>
           <div className='gram-body-container'>
             <div className='gram-image-container'>
-              <img src={bouldering} className='picture bouldering'></img>
+              <div className='picture bouldering filler'>
+                <img src={bouldering} className='bouldering'></img>
+              </div>
               <div className='picture singing filler'>
                 <img src={singing} className='singing'></img>
               </div>
-              <img src={softball} className='picture softball'></img>
+              <div className='picture softball filler'>
+                <img src={softball} className='softball'></img>
+              </div>
             </div>
             <div className='gram-text'>
               <div className='button-container'>
