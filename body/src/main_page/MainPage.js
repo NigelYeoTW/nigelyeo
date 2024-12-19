@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import MainPageAboutMe from "./MainPageAboutMe";
 import MainPageSelection from "./MainPageSelection";
 import MainPageTop from "./MainPageTop";
-import Loading from './Loading';
+import Loading from '../Loading';
 import MainPageContactMe from './MainPageContactMe';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
