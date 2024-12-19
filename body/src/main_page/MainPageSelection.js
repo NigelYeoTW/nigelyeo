@@ -52,9 +52,11 @@ function MainPageSelection() {
       <div className="projects select">
         <span>PROJECTS</span>
       </div>
+      <Link to='/ExpAwards' className='link'>
       <div className='work-awards select'>
         <span>EXPERIENCE & AWARDS</span>
       </div>
+      </Link>
       <Link to='/Hobbies' className='link'>
       <div className='hobbies select'>
         <span>HOBBIES</span>
