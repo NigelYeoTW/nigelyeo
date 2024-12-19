@@ -1,6 +1,7 @@
 import './MainPageSelection.css';
 import react from 'react';
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router';
 
 function MainPageSelection() {
 
@@ -54,9 +55,11 @@ function MainPageSelection() {
       <div className='work-awards select'>
         <span>EXPERIENCE & AWARDS</span>
       </div>
+      <Link to='/Hobbies' className='link'>
       <div className='hobbies select'>
         <span>HOBBIES</span>
       </div>
+      </Link>
     </div>
   )
 }

@@ -7,6 +7,10 @@ div.selection-overall {
   /* background-color: #e7dda9; */
 }
 
+.link {
+  text-decoration: none;
+}
+
 div.select {
   position: relative;
   width: 330px;
