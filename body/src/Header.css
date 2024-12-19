@@ -1,0 +1,58 @@
+span {
+  font-family: Neuemontreal, sans-serif;
+  color: black;
+
+}
+
+div.beside-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+span.my-name {
+  display: inline-block;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+span.below-name {
+  display: inline-block;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-left: 20px;
+}
+
+
+.logo {
+  height: 8rem;
+  padding: 15px;
+  padding-right: 5px;
+}
+
+div.header {
+  background-color: #dcd8c0;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+div.contact-button-container {
+  position: absolute;
+  right: 50px;
+  top: 22%;
+  border: 1px solid #b3af97;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button.contact-button {
+  font-family: Neuemontreal, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  border: 0px;
+  height: 40px;
+  background-color: #dcd8c0;
+  cursor: pointer;
+}

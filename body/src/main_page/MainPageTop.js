@@ -1,29 +1,12 @@
 import './MainPageTop.css';
-import logo from './logo.png';
 import me from './me.png';
-import downArrow from './icon-arrow-down.svg';
 import speechBubble from './speech-bubble.png';
+import downArrow from './icon-arrow-down.svg';
 
 function MainPageTop() {
 
-  const scrollBottom = () => {
-    window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
-  }
-
   return (
-    <div className="mainpage">
-      <div className = "header">
-        <img src={logo} className="logo"></img>
-        <div className="beside-logo">
-          <span className="my-name">Nigel Yeo's</span>
-          <span className='below-name'>Personal Profile</span>
-        </div>
-        <div className='contact-button-container' onClick={scrollBottom}>
-          <button className='contact-button' onClick={scrollBottom}> 
-            Contact Me
-          </button>
-        </div>
-      </div>
+    <div className="mainpage"> 
       <div className="hero">
         <div className='crop-box'>
           <img src={me} className="me"></img>

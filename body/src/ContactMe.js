@@ -1,9 +1,9 @@
-import './MainPageContactMe.css';
+import './ContactMe.css';
 import github from './github.svg';
 import mail from './mail.png';
 import tele from './tele.svg';
 
-function MainPageContactMe() {
+function ContactMe() {
 
   const copyToClipboardMail = () => {
     navigator.clipboard.writeText("nigelyeotongwei@gmail.com");
@@ -39,4 +39,4 @@ function MainPageContactMe() {
   )
 }
 
-export default MainPageContactMe;
+export default ContactMe;
