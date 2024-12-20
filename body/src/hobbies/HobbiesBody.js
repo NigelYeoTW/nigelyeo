@@ -4,13 +4,27 @@ import bouldering from './bouldering.jpg';
 import singing from './singing.png';
 import softball from './softball.jpg';
 import react from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import archive from './archive.svg';
+import football from './football.jpg';
 
 function HobbiesBody() {
 
+  const [isArchive, setArchive] = useState(false);
   const [swipeNumber, setSwipeNumber] = useState(0);
   let swipePictures = document.querySelectorAll('.picture');
   let swipeTexts = document.querySelectorAll('.text');
+  let archiveText = document.querySelector('.archive-text');
+
+  const clickArchive = () => {
+    if (isArchive) {
+      archiveText.classList.remove('appear');
+    } else {
+      archiveText.classList.add('appear');
+    }
+    setArchive(isArchive => !isArchive);
+    setSwipeNumber(0);
+  } 
 
   const swipeLeft = () => {
     if (swipeNumber == 0) {
@@ -33,14 +47,38 @@ function HobbiesBody() {
   useEffect(() => {
     swipePictures = document.querySelectorAll('.picture');
     swipeTexts = document.querySelectorAll('.text');
-  }, [])
+    archiveText = document.querySelector('.archive-text');
+  }, [isArchive])
 
   return (
     <div>
       <div className='phone-image-container'>
         <img src={phone} className='phone-image'></img>
         <div className='contents-container'>
-          <span className='gram-logo'>nigelgram</span>
+          <div className='gram-header'>
+            <span className='gram-logo'>nigelgram</span>
+            <span className='archive-text grey-text'>Archive</span>
+            <img src={archive} className='archive-logo' onClick={clickArchive}></img>
+          </div>
+          { isArchive ? <>
+          <div className='gram-body-container'>
+            <div className='gram-image-container'>
+              <div className='picture football grey-out'>
+                <img src={football} className='football blend'></img>
+              </div>
+            </div>
+            <div className='gram-text'>
+              <div className='grey-text text bouldering'>
+                <strong>Football.</strong>
+                <p>
+                  Football is one of the only sports that I have consistently keep up with the news. I have watched football all my life 
+                  and in Junior College I decided to finally give it a try on a more serious note. I played for 2 years as a Center Back 
+                  and though I still love football deeply, I realise that this sport isn't the one for me and I enjoyed it more as a spectator.
+                </p>
+              </div>
+            </div>
+          </div>
+          </> : <>
           <div className='gram-body-container'>
             <div className='gram-image-container'>
               <div className='picture bouldering filler'>
@@ -91,6 +129,7 @@ function HobbiesBody() {
               </div>
             </div>
           </div>
+          </>}
         </div>
       </div>
     </div>

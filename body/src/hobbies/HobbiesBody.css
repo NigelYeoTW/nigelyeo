@@ -3,6 +3,10 @@
   src: url("GreatVibes-Regular.ttf");
 }
 
+.grey-text {
+  color: rgb(71, 71, 71);
+}
+
 div.text p {
   font-family: Neuemontreal, sans-serif;
   font-size: 20px;
@@ -47,6 +51,24 @@ div.contents-container {
   animation: 4s appear;
 }
 
+div.gram-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+img.archive-logo {
+  display: block;
+  transform: scale(0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+img.archive-logo:hover {
+  transform: scale(0.45);
+}
+
 div.phone-image-container {
   position: relative;
   overflow: hidden;
@@ -71,12 +93,27 @@ span.gram-logo {
   display: inline-block;
   font-family: 'cursive';
   font-size: 30px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+}
+
+span.archive-text {
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 100px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+}
+
+span.appear {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
 }
 
 div.gram-body-container {
   position: relative;
-  height: 87%;
+  height: 83%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -88,11 +125,20 @@ div.gram-image-container {
   height: 100%; */
   overflow: hidden;
   display: inline-block;
-  margin: 30px;
-  margin-bottom: 40px;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   margin-right: 40px;
   border-radius: 10px;
   border: 2px solid black;
+}
+
+div.grey-out {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(105, 68, 20);
+  /* opacity: 0.6; */
+  /* mix blend mode */
 }
 
 div.filler {
@@ -111,7 +157,7 @@ div.gram-text {
 div.button-container {
   margin-right: 50px;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
 }
 
 button.change{
@@ -139,6 +185,10 @@ div.text {
   transition: opacity 0.5s ease-in-out;
 }
 
+div.grey-out img {
+  mix-blend-mode:lighten;
+}
+
 img.bouldering {
   transform: scale(0.7);
   margin-top: -160px;
@@ -147,7 +197,7 @@ img.bouldering {
 
 img.singing {
   transform: scale(0.25);
-  margin-top: -315px;
+  margin-top: -308px;
   margin-left: -655px;
 }
 
@@ -157,7 +207,13 @@ img.softball {
   margin-top: -500px;
 }
 
-.bouldering {
+img.football {
+  transform: scale(0.4);
+  margin-left: -435px;
+  margin-top: -350px;
+}
+
+.bouldering, .football {
   z-index: 3; 
 }
 
