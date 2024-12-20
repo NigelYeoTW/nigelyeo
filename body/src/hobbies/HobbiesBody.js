@@ -7,6 +7,7 @@ import react from 'react';
 import { useState, useEffect, useRef } from 'react';
 import archive from './archive.svg';
 import football from './football.jpg';
+import back from './return.png';
 
 function HobbiesBody() {
 
@@ -15,12 +16,18 @@ function HobbiesBody() {
   let swipePictures = document.querySelectorAll('.picture');
   let swipeTexts = document.querySelectorAll('.text');
   let archiveText = document.querySelector('.archive-text');
+  let archiveIcon = document.querySelector('.archive-logo');
+  let backIcon = document.querySelector('.back-logo');
 
   const clickArchive = () => {
     if (isArchive) {
       archiveText.classList.remove('appear');
+      archiveIcon.classList.add('appear');
+      backIcon.classList.remove('appear')
     } else {
       archiveText.classList.add('appear');
+      backIcon.classList.add('appear');
+      archiveIcon.classList.remove('appear')
     }
     setArchive(isArchive => !isArchive);
     setSwipeNumber(0);
@@ -48,6 +55,8 @@ function HobbiesBody() {
     swipePictures = document.querySelectorAll('.picture');
     swipeTexts = document.querySelectorAll('.text');
     archiveText = document.querySelector('.archive-text');
+    archiveIcon = document.querySelector('.archive-logo');
+    backIcon = document.querySelector('.back-logo');
   }, [isArchive])
 
   return (
@@ -58,7 +67,10 @@ function HobbiesBody() {
           <div className='gram-header'>
             <span className='gram-logo'>nigelgram</span>
             <span className='archive-text grey-text'>Archive</span>
-            <img src={archive} className='archive-logo' onClick={clickArchive}></img>
+            <div className='corner-icon'>
+            <img src={back} className='back-logo' onClick={clickArchive}></img>
+            <img src={archive} className='appear archive-logo' onClick={clickArchive}></img>
+            </div>
           </div>
           { isArchive ? <>
           <div className='gram-body-container'>

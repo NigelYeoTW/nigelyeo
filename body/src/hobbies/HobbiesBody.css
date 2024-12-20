@@ -57,11 +57,25 @@ div.gram-header {
   align-items: center;
 }
 
+div.corner-logo {
+  position:relative;
+}
 
 img.archive-logo {
+  position:relative;
   display: block;
   transform: scale(0.4);
   cursor: pointer;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+img.back-logo {
+  position: absolute;
+  display: block;
+  transform: scale(0.4);
+  cursor: pointer;
+  opacity: 0;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -105,7 +119,7 @@ span.archive-text {
   visibility: hidden;
 }
 
-span.appear {
+span.appear, img.appear {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease-in-out;
