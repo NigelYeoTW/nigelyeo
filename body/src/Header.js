@@ -9,15 +9,31 @@ function Header() {
 
   return (
     <div className = "header">
-      <img src={logo} className="logo"></img>
-      <div className="beside-logo">
-        <span className="my-name">Nigel Yeo's</span>
-        <span className='below-name'>Personal Profile</span>
+      <div className='main-logo-container'>
+        <img src={logo} className="logo"></img>
+        <div className="beside-logo">
+          <span className="my-name">Nigel Yeo's</span>
+          <span className='below-name'>Personal Profile</span>
+        </div>
       </div>
-      <div className='contact-button-container' onClick={scrollBottom}>
-        <button className='contact-button' onClick={scrollBottom}> 
-          Contact Me
-        </button>
+      <div className='menu'>
+        <span className='menu-item'>Home</span>
+      </div>
+      <div className='menu'>
+        <span className='menu-item'>Projects</span>
+      </div>
+      <div className='menu'>
+        <span className='menu-item'>Experience</span>
+      </div>
+      <div className='menu'>
+        <span className='menu-item'>Hobbies</span>
+      </div>
+      <div className='menu'>
+        <div className='contact-button-container' onClick={scrollBottom}>
+          <button className='contact-button' onClick={scrollBottom}> 
+            Contact Me
+          </button>
+        </div>
       </div>
     </div>
   )
