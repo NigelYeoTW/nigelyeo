@@ -14,8 +14,8 @@ function MainPageAboutMe() {
       gsap.fromTo(el, { xPercent: -100, opacity: 0 }, {
           xPercent: 0, opacity: 1, scrollTrigger: {
               trigger: el,
-              start: '40 bottom',
-              end: '60 70',
+              start: 'top bottom',
+              end: 'top top',
               scrub: true 
           }
       })

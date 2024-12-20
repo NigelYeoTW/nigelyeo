@@ -30,10 +30,6 @@ function MainPageSelection() {
     }
   }, [])
 
-  const dummy = () => {
-
-  }
-
   function intersectionCallback(entries) {
     const [entry] = entries;
     if (entry.isIntersecting) {
