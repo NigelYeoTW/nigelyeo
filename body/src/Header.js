@@ -1,5 +1,7 @@
 import './Header.css';
 import logo from './logo.png';
+import react from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -17,16 +19,24 @@ function Header() {
         </div>
       </div>
       <div className='menu'>
+        <Link to='/'>
         <span className='menu-item'>Home</span>
+        </Link>
       </div>
       <div className='menu'>
+        <Link to='/Projects'>
         <span className='menu-item'>Projects</span>
+        </Link>
       </div>
       <div className='menu'>
+        <Link to='/ExpAwards'>
         <span className='menu-item'>Experience</span>
+        </Link>
       </div>
       <div className='menu'>
+        <Link to='/Hobbies'>
         <span className='menu-item'>Hobbies</span>
+        </Link>
       </div>
       <div className='menu'>
         <div className='contact-button-container' onClick={scrollBottom}>
