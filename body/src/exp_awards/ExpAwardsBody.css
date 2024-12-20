@@ -1,47 +1,70 @@
+div.dividor {
+  border: 1px solid rgb(184, 184, 184);
+  margin: 0 1%;
+}
+
 div.exp-awards-body {
   display: flex;
   flex-direction: column;
   font-family: Neuemontreal, sans-serif;
 }
 
-div.exp-awards-body span {
+span.category {
   margin: 20px;
   margin-top: 40px;
+  margin-left: 3%;
   font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
 }
 
-div.experience-grid {
+div.experience-grid, div.awards-grid-two {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* border: 1px solid black; */
+  grid-template-columns: 2fr 3fr;
+  margin: 2%;
+  padding: 1%;
+  border: 3px solid rgb(204, 173, 119);
+  border-radius: 23px;
+}
+
+div.awards-grid-one {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 2%;
+  padding: 1%;
+  border: 3px solid rgb(204, 173, 119);
+  border-radius: 23px;
 }
 
 div.experience-pic-container {
-  position: relative;
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-gap: 20px;
   width: 100%;
   height: 500px;
   /* overflow: hidden; */
 }
 
 div.experience-pic-one {
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
-  top: 0;
+  border-radius: 20px;
+  /* top: 0;
   left: 0;
   height: 65%;
-  width: 55%;
+  width: 55%; */
   /* transform: rotate(-10deg); */
 }
 
 div.experience-pic-two {
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
-  bottom: 0;
+  border-radius: 20px;
+  /* bottom: 0;
   right: 0;
   height: 65%;
-  width: 65%;
+  width: 65%; */
   /* transform: rotate(5deg); */
 }
 
@@ -52,7 +75,66 @@ img.sesto-one {
 }
 
 img.sesto-two {
-  transform: scale(0.5);
-  margin-top: -500px;
-  margin-left: -80px;
+  transform: scale(0.75);
+  margin-top: -250px;
+  margin-left: -150px;
+}
+
+img.psa-one {
+  transform: scale(0.15) rotate(1deg);
+  transform-origin: 0% 0%;
+  margin-top: -10px;
+  margin-left: -220px;
+}
+
+img.psa-two {
+  /* transform-origin: 100% 0%; */
+  transform: scale(0.12) rotate(-90deg);
+  margin-left: -2600px;
+  margin-top: -1600px;
+}
+
+img.ideate-one {
+  transform-origin: 0% 0%;
+  transform: scale(0.6);
+  margin-top: -60px;
+  margin-left: -20px;
+}
+
+img.ideate-two {
+  transform-origin: 0% 0%;
+  transform: scale(0.52);
+  margin-left: -180px;
+}
+
+strong.title {
+  font-size: 25px;
+}
+
+p.role {
+  color: grey;
+  font-size: 15px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+div.experience-text, div.awards-text {
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+  grid-gap: 20px;
+}
+
+div.skills {
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+}
+
+div.skills img {
+  height: 80px;
+  margin: 0 10px;
 }
