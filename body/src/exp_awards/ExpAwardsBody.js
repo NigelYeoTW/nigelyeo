@@ -1,4 +1,6 @@
 import './ExpAwardsBody.css';
+import react from 'react';
+import { useEffect } from 'react';
 import sestoOne from './sesto-one.jpg';
 import sestoTwo from './sesto-two.jpg';
 import psaOne from './psa-one.jpg';
@@ -12,8 +14,22 @@ import css from './css.svg';
 import python from './python.svg';
 import html from './html.svg';
 import vue from './vue.svg';
+import downArrow from './downArrow.svg';
 
 function ExpAwardsBody() {
+
+  let experienceDisplay = document.querySelectorAll('.dummy');
+
+  useEffect(() => {
+    experienceDisplay = document.querySelectorAll('.role, .description, .experience-pic-container, .experience-grid, .experience-text');
+  }, [])
+
+  const displayContent = () => {
+    experienceDisplay.forEach((content) => {
+      content.classList.add('display');
+    })
+  }
+
   return (
     <div className="exp-awards-body">
       <span className='category'>Experience</span>
@@ -22,7 +38,7 @@ function ExpAwardsBody() {
           <div className='written'>
             <strong className='title'>Robotics Engineer, National University Singapore, EDIC</strong>
             <p className='role'>Team Lead, May 2024 - Aug 2024</p>
-            <p>
+            <p className='description'>
               <ul>
                 <li>Work with the SESTO Magnus Lite and SESTO Magnus industrial robots to carry out manual task around the hub such as transportation of equipment</li>
                 <li>Liason with team and SESTO engineers to troubleshoot robots</li>
@@ -35,6 +51,9 @@ function ExpAwardsBody() {
             <img src={ros}></img>
             <img src={python}></img>
             <img src={cpp}></img>
+          </div>
+          <div className="down-arrow-container">
+            <img src={downArrow} className="down" onClick={displayContent}></img>
           </div>
         </div>
         <div className='experience-pic-container'>
