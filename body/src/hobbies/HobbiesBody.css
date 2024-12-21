@@ -285,3 +285,55 @@ img.swiped-picture, div.swiped-picture {
   transform: translate3d(-50vw, 0, 0);
 }
 
+@media (min-width: 2700px) {
+div.contents-container {
+  position: absolute;
+  width: 1623px;
+  height: 730px;
+  top: calc(240px + (100vw - 2700px) / 5.5);
+  left: calc(495px + (100vw - 2700px) / 1.9);
+  padding: 0.5vw;
+}
+
+img.bouldering {
+  width: 807px;
+  margin-top: -160px;
+}
+
+img.singing {
+  width: 712px;
+  margin-top: 66px;
+}
+
+img.softball {
+  width: 725px;
+  margin-top: -370px;
+}
+}
+
+
+/*for phone (tbc)*/
+/*@media (max-width: 780px) {
+img.phone-image {
+  display: none;
+}
+
+div.phone-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contents-container {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 90%;
+  height: 90%; 
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+}*/
