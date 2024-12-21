@@ -104,14 +104,6 @@ function HobbiesBody() {
               </div>
             </div>
             <div className='gram-text'>
-              <div className='button-container'>
-                <button className='change' onClick={swipeLeft}>
-                  <span>&lt;</span>
-                </button>
-                <button className='change' onClick={swipeRight}>
-                  <span>&gt;</span>
-                </button>
-              </div>
               <div className='text bouldering'>
                 <strong>Bouldering.</strong>
                 <p>
@@ -138,6 +130,14 @@ function HobbiesBody() {
                   and fundamentals there. I have since fell in love with the sport and play for the Diamond Warriors, 
                   actively participating in tournaments and competitions.
                 </p>
+              </div>
+              <div className='button-container'>
+                <button className='change' onClick={swipeLeft}>
+                  <span>&lt;</span>
+                </button>
+                <button className='change' onClick={swipeRight}>
+                  <span>&gt;</span>
+                </button>
               </div>
             </div>
           </div>
