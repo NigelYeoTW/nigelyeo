@@ -1,6 +1,32 @@
 div.dividor {
   border: 1px solid rgb(184, 184, 184);
-  margin: 0 1%;
+  width: 95%;
+  margin-bottom: 30px;
+  justify-self: center;
+}
+
+div.exp-awards-container {
+  margin: 40px;
+  margin-top: 0;
+  border-radius: 12px;
+  border: 2px solid rgb(111, 111, 111);
+}
+
+div.exp-awards-header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0; 
+}
+
+div.collapsable1, div.collapsable2, div.collapsable3 {
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+div.display {
+  display: block;
+  overflow: hidden;
 }
 
 div.exp-awards-body {
@@ -10,35 +36,28 @@ div.exp-awards-body {
 }
 
 span.category {
-  margin: 20px;
+  margin: 40px;
   margin-top: 40px;
-  margin-left: 3%;
   font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
 }
 
 div.written p {
-  display: none;
+  /* display: none; */
+  /* visibility: hidden; */
 }
 
 div.experience-grid, div.awards-grid-two {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  margin: 2%;
-  padding: 1%;
-  border: 3px solid rgb(204, 173, 119);
-  border-radius: 23px;
   grid-template-columns: none;
+  /* transition: height 3s ease-in-out; */
 }
 
 div.awards-grid-one {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  margin: 2%;
-  padding: 1%;
-  border: 3px solid rgb(204, 173, 119);
-  border-radius: 23px;
 }
 
 div.experience-pic-container {
@@ -48,8 +67,9 @@ div.experience-pic-container {
   grid-gap: 20px;
   width: 100%;
   height: 500px;
-  display:none;
+  /* display:none; */
   /* overflow: hidden; */
+  /* visibility: hidden; */
 }
 
 div.experience-pic-one {
@@ -114,6 +134,8 @@ img.ideate-two {
 }
 
 strong.title {
+  display: inline-block;
+  margin-bottom: 5px;
   font-size: 25px;
 }
 
@@ -124,24 +146,24 @@ p.role {
 
 li {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 div.experience-text, div.awards-text {
-  padding: 5%;
-  display: grid;
-  grid-template-rows: 7fr 3fr;
-  grid-gap: 20px;
-  display: grid;
-  grid-template-columns: 4fr 6fr 100px;
-  grid-template-rows: none;
   padding: 1%;
+  display: grid;
+  /* grid-template-rows: 7fr 3fr; */
+  grid-gap: 20px;
+  /* display: grid; */
+  grid-template-columns: 4fr 6fr;
+  /* grid-template-rows: none; */
+  /* padding: 1%; */
 }
 
 div.skills {
   position: relative;
   display: flex;
-  padding: 0 20px;
+  padding: 20px;
   /* display: none */
 }
 
@@ -159,25 +181,4 @@ div.down-arrow-container {
 img.down {
   width: 30px;
   cursor: pointer;
-}
-
-div.written p.display {
-  display: block;
-}
-
-div.experience-grid.display {
-  display: grid;
-  grid-template-columns: 2fr 3fr 100px;
-}
-
-div.experience-text.display {
-  display: grid;
-  grid-template-rows: 7fr 3fr;
-  grid-template-columns: none;
-}
-
-div.experience-pic-container.display {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  grid-gap: 20px;
 }
