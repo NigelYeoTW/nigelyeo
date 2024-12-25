@@ -18,6 +18,10 @@ strong.proj-title {
   color: grey;
 }
 
+div.proj-one-grid {
+  position: relative;
+  width: 474px;
+}
 
 div.proj-grid {
   z-index: -1;
@@ -32,11 +36,30 @@ div.proj-container {
   position: relative;
   display: flex;
   height: 300px;
+  width: 474px;
   border: 1px solid black;
   border-radius: 15px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+}
+
+div.proj-title-container {
+  padding: 15px;
+  padding-top: 0;
+}
+
+p.proj-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  text-wrap:initial;
+}
+
+p.proj-details {
+  margin: 0;
+  color: grey;
+  font-size: 15px;
 }
 
 div.blur {
