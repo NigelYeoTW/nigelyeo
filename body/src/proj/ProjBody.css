@@ -1,0 +1,60 @@
+div.proj-overall {
+  position: relative;
+  overflow: hidden;
+}
+
+div.overlay {
+  z-index: -2;
+  position: absolute;
+  height: 140%;
+  width: 130%;
+  transform: translate3d(-20%, -20%, 0) rotate(-45deg);
+  display: flex;
+  flex-direction: column;
+}
+
+strong.proj-title {
+  font-size: 140px;
+  color: grey;
+}
+
+
+div.proj-grid {
+  z-index: -1;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+}
+
+div.proj-container {
+  position: relative;
+  display: flex;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+div.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  background-color: rgb(28, 28, 28);
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+div.proj-container:hover div.blur {
+  transform: translate3d(0,0,0);
+}
+
+div.proj-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
