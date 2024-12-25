@@ -70,6 +70,17 @@ div.blur {
   background-color: rgb(28, 28, 28);
   transform: translate3d(0, 100%, 0);
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+p.extra-info {
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0;;
 }
 
 div.proj-container:hover div.blur {
