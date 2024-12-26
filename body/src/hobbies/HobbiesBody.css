@@ -7,6 +7,10 @@
   src: url("GreatVibes-Regular.ttf");
 }
 
+div.hobbies-overall {
+  background-color: #dbd8c0;
+}
+
 .grey-text {
   color: rgb(71, 71, 71);
 }

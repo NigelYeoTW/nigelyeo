@@ -10,6 +10,19 @@ div.exp-awards-container {
   margin-top: 0;
   border-radius: 12px;
   border: 2px solid rgb(111, 111, 111);
+  box-shadow: 6px 6px 3px grey;
+  cursor: pointer;
+}
+
+div.exp-awards-container:hover {
+  background-color: black;
+  box-shadow: 6px 6px 3px grey;
+  transition: background-color 0.3s ease-in-out;
+}
+
+div.exp-awards-container:hover strong{
+  transition: color 0.3s ease-in-out;
+  color: white;
 }
 
 div.exp-awards-header {
@@ -33,6 +46,7 @@ div.exp-awards-body {
   display: flex;
   flex-direction: column;
   font-family: Neuemontreal, sans-serif;
+  background-color: #dbd8c0;
 }
 
 span.category {
@@ -46,6 +60,7 @@ span.category {
 div.written p {
   /* display: none; */
   /* visibility: hidden; */
+  color: white;
 }
 
 div.experience-grid, div.awards-grid-two {

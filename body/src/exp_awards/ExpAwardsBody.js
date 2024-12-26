@@ -56,15 +56,15 @@ function ExpAwardsBody() {
   return (
     <div className="exp-awards-body">
       <span className='category'>Experience</span>
-      <div className='exp-awards-container'>
+      <div className='exp-awards-container' onClick={displayContent1} style={{backgroundColor: maxHeight1 ? '#000' : ""}}>
         <div className='exp-awards-header'>
           <div className='exp-awards-summary'>
-            <strong className='title'>Robotics Engineer, National University Singapore, EDIC</strong>
+            <strong className='title' style={{color: maxHeight1 ? "#fff" : ""}}>Robotics Engineer, National University Singapore, EDIC</strong>
             <p className='role'>Team Lead, May 2024 - Aug 2024</p>
           </div>
-          <div className="down-arrow-container">
+          {/* <div className="down-arrow-container">
             <img src={downArrow} className="down" onClick={displayContent1}></img>
-          </div>
+          </div> */}
         </div>
         <div className='dividor'></div>
         <div className='collapsable1' style={{maxHeight: maxHeight1 ? maxHeight1 : 0}}>
@@ -98,15 +98,15 @@ function ExpAwardsBody() {
         </div>
       </div>
       <span className='category'>Awards</span>
-      <div className='exp-awards-container'>
+      <div className='exp-awards-container' onClick={displayContent2} style={{backgroundColor: maxHeight2 ? '#000' : ""}}>
         <div className='exp-awards-header'>
           <div className='exp-awards-summary'>
-            <strong className='title'>PSA CodeSprint Finalist, 5-8th place out of 92 teams</strong>
+            <strong className='title' style={{color: maxHeight2 ? "#fff" : ""}}>PSA CodeSprint Finalist, 5-8th place out of 92 teams</strong>
             <p className='role'>2024</p>
           </div>
-          <div className="down-arrow-container">
+          {/* <div className="down-arrow-container">
             <img src={downArrow} className="down" onClick={displayContent2}></img>
-          </div>
+          </div> */}
         </div>
         <div className='dividor'></div>
         <div className='collapsable2' style={{maxHeight: maxHeight2 ? maxHeight2 : 0}}>
@@ -140,15 +140,15 @@ function ExpAwardsBody() {
         </div>
         </div>
       </div>
-      <div className='exp-awards-container'>
+      <div className='exp-awards-container' onClick={displayContent3} style={{backgroundColor: maxHeight3 ? '#000' : ""}}>
         <div className='exp-awards-header'>
           <div className='exp-awards-summary'>
-            <strong className='title'>Ideate Hackathon Finalist, 1st Runner Up</strong>
+            <strong className='title' style={{color: maxHeight3 ? "#fff" : ""}}>Ideate Hackathon Finalist, 1st Runner Up</strong>
             <p className='role'>2024</p>
           </div>
-          <div className="down-arrow-container">
+          {/* <div className="down-arrow-container">
             <img src={downArrow} className="down" onClick={displayContent3}></img>
-          </div>
+          </div> */}
         </div>
         <div className='dividor'></div>
         <div className='collapsable3' style={{maxHeight: maxHeight3 ? maxHeight3 : 0}}>

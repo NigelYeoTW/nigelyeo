@@ -1,6 +1,7 @@
 div.proj-overall {
   position: relative;
   overflow: hidden;
+  background-color: #dbd8c0;
 }
 
 div.overlay {
@@ -37,23 +38,24 @@ div.proj-container {
   display: flex;
   height: 300px;
   width: 474px;
-  border: 1px solid black;
-  border-radius: 15px;
+  /* border: 1px solid black; */
+  border-radius: 25px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
 }
 
 div.proj-title-container {
-  padding: 15px;
+  /* padding: 15px; */
   padding-top: 0;
 }
 
 p.proj-title {
   display: inline-block;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 20px;
   text-wrap:initial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p.proj-details {

@@ -60,7 +60,7 @@ function HobbiesBody() {
   }, [isArchive])
 
   return (
-    <div>
+    <div className='hobbies-overall'>
       <div className='phone-image-container'>
         <img src={phone} className='phone-image'></img>
         <div className='contents-container'>
