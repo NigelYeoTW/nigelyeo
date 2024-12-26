@@ -1,5 +1,5 @@
 div.selection-overall {
-  min-width: 1470px;
+  /* min-width: 1470px; */
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -90,4 +90,15 @@ div.select span {
   background-color: #dcd8c0;
   border-radius: 13px;
 } */
+
+@media (max-width: 1100px) {
+  div.selection-overall {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    /* grid-template-rows: auto; */
+    place-items: center;
+    gap: 30px;
+  }
+}
 

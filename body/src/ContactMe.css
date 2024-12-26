@@ -1,6 +1,7 @@
 div.contact-me-container {
   /* min-width: 1470px; */
   background-color: #000000;
+  overflow: hidden;
 }
 
 p.lets-connect {
@@ -79,7 +80,7 @@ img.mail {
 p.hidden-text {
   position: absolute;
   visibility: hidden;
-  transform: translate3d(30px, -100px, 0);
+  transform: translate3d(-30px, -100px, 0);
   font-size: 20px;
 }
 
