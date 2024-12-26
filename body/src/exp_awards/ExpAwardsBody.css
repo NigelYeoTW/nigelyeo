@@ -64,9 +64,9 @@ div.written p {
 }
 
 div.experience-grid, div.awards-grid-two {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-columns: none;
+  grid-template-columns: none; */
   /* transition: height 3s ease-in-out; */
 }
 
@@ -91,6 +91,9 @@ div.experience-pic-one {
   /* position: absolute; */
   overflow: hidden;
   border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
   /* top: 0;
   left: 0;
   height: 65%;
@@ -196,4 +199,32 @@ div.down-arrow-container {
 img.down {
   width: 30px;
   cursor: pointer;
+}
+
+@media (max-width: 1540px) {
+  div.experience-pic-two {
+    display: none;
+  }
+
+  div.experience-text {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.experience-pic-container {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 1100px) {
+  div.experience-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.experience-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
