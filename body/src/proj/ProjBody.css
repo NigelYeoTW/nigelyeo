@@ -26,11 +26,12 @@ div.proj-one-grid {
 
 div.proj-grid {
   z-index: -1;
-  padding: 60px;
+  /* padding: 60px; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 474px 474px 474px;
   grid-template-rows: auto;
   gap: 40px;
+  justify-content: center;
 }
 
 div.proj-container {
@@ -93,4 +94,16 @@ div.proj-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 1590px) {
+  div.proj-grid {
+    grid-template-columns: 474px 474px;
+  }
+}
+
+@media (max-width: 1050px) {
+  div.proj-grid {
+    grid-template-columns: 474px;
+  }
 }
