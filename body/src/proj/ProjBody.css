@@ -26,7 +26,7 @@ div.proj-one-grid {
 
 div.proj-grid {
   z-index: -1;
-  /* padding: 60px; */
+  padding-bottom: 60px;
   display: grid;
   grid-template-columns: 474px 474px 474px;
   grid-template-rows: auto;
